@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Themes | Santiago's Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html { scroll-behavior: smooth; }
+
+        .fade-in-section {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            margin-bottom: 60px;
+        }
+
+        /* Matches the style of your Synopsis header */
+        .themes-hero {
+            position: relative;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .header-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(50%);
+        }
+
+        .theme-image {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .quote-box {
+            background-color: #fff9f0;
+            border-left: 5px solid #f39c12;
+            padding: 20px;
+            font-style: italic;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">SANTIAGO'S JOURNEY</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="author.html">Author</a></li>
+            <li><a href="synopsis.html">Synopsis</a></li>
+            <li><a href="themes.html">Themes</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <header class="themes-hero">
+        <img src="Desert_Arabic.jpg" alt="Themes Header" class="header-bg-img">
+        <h1>Themes and Reflection</h1>
+    </header>
+
+    <div class="container">
+        <section class="fade-in-section">
+            <h2 style="border-left: 5px solid #f39c12; padding-left: 15px;">Core Themes</h2>
+            
+            <div class="quote-box">
+                "It's the possibility of having a dream come true that makes life interesting."
+            </div>
+
+            <h3>1. The Personal Legend</h3>
+            <p>The main theme of the book is finding one's "Personal Legend", your true purpose in life. Just like the boys in the documentary your teacher showed, Santiago has to leave everything he knows to find where he truly belongs.</p>
+            
+            <img src="Teen_Boy_Desert.jpg" alt="The Journey" class="theme-image">
+
+            <h3>2. The Soul of the World</h3>
+            <p>Santiago learns that everything in the universe is connected. When you want something with all your heart, you are closer to the Soul of the World.</p>
+        </section>
+
+        <section class="fade-in-section">
+            <h2 style="border-left: 5px solid #f39c12; padding-left: 15px;">Personal Reflection</h2>
+            <p>The "grind" of Santiago is something I can relate to. Whether it's spending hours practicing with my basketball team or setting up complex scripts on my PC, the book shows that persistence is the key to reaching any goal.</p>
+        </section>
+    </div>
+</body>
+</html>

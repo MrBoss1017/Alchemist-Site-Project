@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Alchemist | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-flex {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .text-side { flex: 2; min-width: 300px; }
+        .image-side { flex: 1; min-width: 250px; }
+        .book-cover { 
+            width: 100%; 
+            border-radius: 10px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+        .book-cover:hover { transform: scale(1.02); }
+        .main-message {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            border-top: 2px solid var(--gold);
+            background: rgba(243, 156, 18, 0.05);
+            border-radius: 0 0 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">SANTIAGO'S JOURNEY</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="author.html">Author</a></li>
+            <li><a href="synopsis.html">Synopsis</a></li>
+            <li><a href="themes.html">Themes</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>The Alchemist</h1>
+        <p id="dynamic-greeting">Follow the omens...</p>
+    </header>
+
+    <div class="container">
+        <div class="content-flex">
+            <div class="text-side">
+                <h2>About the Book</h2>
+                <p><em>The Alchemist</em> is a magnificent book by Paulo Coelho that tells the story of Santiago, a young shepherd boy who travels the desert to the Egyptian pyramids in search of a treasure he saw in a dream.</p>
+                <p>Along his journey, he meets an Alchemist who teaches him that "when you want something, all the universe conspires in helping you to achieve it." It is a story about the importance of listening to your heart and following your "Personal Legend."</p>
+            </div>
+            <div class="image-side">
+                <img src="alchemist_cover.jpg" alt="The Alchemist Book Cover" class="book-cover">
+            </div>
+        </div>
+
+        <div class="main-message">
+            <h3>Main Message:</h3>
+            <p>The core message of the book is that the journey to find your treasure is more important than the treasure itself. It teaches that fear is a bigger obstacle than the obstacle itself, and that everything in the universe is connected by a "Universal Language."</p>
+        </div>
+    </div>
+
+    <script>
+        const hour = new Date().getHours();
+        const greeting = hour < 12 ? "Good Morning!" : hour < 18 ? "Good Afternoon!" : "Good Evening!";
+        document.getElementById('dynamic-greeting').innerText = greeting + " Ready to find your Personal Legend?";
+    </script>
+</body>
+</html>

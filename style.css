@@ -1,0 +1,91 @@
+:root {
+    --gold: #f39c12;
+    --dark: #121212;
+    --white: #ffffff;
+    --glass: rgba(255, 255, 255, 0.95);
+}
+
+* { box-sizing: border-box; scroll-behavior: smooth; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #eef2f3;
+    color: #333;
+}
+
+/* Nav Bar */
+nav {
+    background: var(--dark);
+    padding: 1.2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--gold);
+}
+
+.logo { color: var(--gold); font-weight: 800; font-size: 1.4rem; letter-spacing: 1px; }
+
+.nav-links { list-style: none; display: flex; gap: 25px; margin: 0; }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--gold); transform: translateY(-2px); }
+
+/* Hero Section - FIXED TILING */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200');
+    background-size: cover;          /* STRETCHES IMAGE TO FIT */
+    background-repeat: no-repeat;    /* PREVENTS SECOND PIC */
+    background-position: center;     /* CENTERS THE VIEW */
+    background-attachment: fixed;    /* PARALLAX EFFECT */
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 { font-size: 3.5rem; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: -60px auto 60px auto;
+    background: var(--glass);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+h2 { color: var(--dark); border-left: 6px solid var(--gold); padding-left: 15px; margin-top: 40px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 25px; }
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-8px); border-color: var(--gold); }
+
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    background: #fdf2e2;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid var(--gold);
+}

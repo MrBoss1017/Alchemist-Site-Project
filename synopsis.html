@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Synopsis | Santiago's Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Smooth Scrolling logic */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Apple-style "Reveal" animation */
+        .fade-in-section {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            margin-bottom: 60px;
+        }
+
+        /* Hero Container Styling */
+        .synopsis-hero {
+            position: relative;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Keeps the image inside the header */
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        /* This styles your new header image to act like a background */
+        .header-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Makes it fill the space perfectly */
+            z-index: -1; /* Puts it behind the text */
+            filter: brightness(60%); /* Adds that dark tint so text is readable */
+        }
+
+        .plot-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+
+        /* Clean Card Layout for Characters */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">SANTIAGO'S JOURNEY</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="author.html">Author</a></li>
+            <li><a href="synopsis.html">Synopsis</a></li>
+            <li><a href="themes.html">Themes</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <header class="synopsis-hero">
+        <img src="Santiago_Alchemist.jpg" alt="Desert Landscape" class="header-bg-img">
+        
+        <h1>The Synopsis</h1>
+    </header>
+
+    <div class="container">
+        <section class="fade-in-section">
+            <h2 style="border-left: 5px solid #f39c12; padding-left: 15px;">The Plot: A Masterpiece</h2>
+            <p>Santiago’s journey is more than just traveling through the desert, it’s a lesson in "Alchemy", the art of turning lead into gold, meaning that  lead is a normal life, and gold is your destiny.</p>
+            <img src="Desert_Landscape.jpg" alt="Desert Landscape" class="plot-image">
+            <p>The story follows a shepherd boy who learns that the journey to find his Personal Legend is more important than the treasure itself.</p>
+        </section>
+
+        <section class="fade-in-section">
+            <h2 style="border-left: 5px solid #f39c12; padding-left: 15px;">Plots & Characters</h2>
+            <div class="character-grid">
+                <div class="card">
+                    <h3>Santiago</h3>
+                    <p>A shepherd boy who learns to listen to his heart and read the omens of the universe.</p>
+                </div>
+                <div class="card">
+                    <h3>The Alchemist</h3>
+                    <p>The wise mentor who helps Santiago understand the "Soul of the World" and speak the universal language.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="fade-in-section">
+            <h2 style="border-left: 5px solid #f39c12; padding-left: 15px;">Symbols</h2>
+            <p><strong>Urim and Thummim:</strong> Two stones that symbolize the ability to make decisions and read the signs of the universe.</p>
+        </section>
+    </div>
+</body>
+</html>

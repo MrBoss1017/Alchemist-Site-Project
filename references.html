@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>References | Santiago's Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html { scroll-behavior: smooth; }
+
+        /* Spicy Hero Header */
+        .ref-hero {
+            position: relative;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: white;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.7);
+        }
+
+        .header-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(40%) sepia(20%);
+        }
+
+        /* The Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        /* Card Design */
+        .ref-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid #f39c12;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .ref-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(243, 156, 18, 0.2);
+            border-top: 4px solid #e67e22;
+        }
+
+        .ref-tag {
+            display: inline-block;
+            background: #fdf2e9;
+            color: #e67e22;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .ref-card h3 { margin-top: 0; color: #2c3e50; }
+        .ref-card p { font-size: 0.95rem; line-height: 1.6; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">SANTIAGO'S JOURNEY</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="author.html">Author</a></li>
+            <li><a href="synopsis.html">Synopsis</a></li>
+            <li><a href="themes.html">Themes</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <header class="ref-hero">
+        <img src="Bookshelf_Full.jpg" alt="References" class="header-bg-img">
+        <h1>Research & Resources</h1>
+    </header>
+
+    <div class="container">
+        <div class="resource-grid">
+            
+            <a href="https://www.sparknotes.com/lit/the-alchemist/symbols/" target="_blank" class="ref-card">
+                <span class="ref-tag">Literary Analysis</span>
+                <h3>SparkNotes: Symbols & Motifs</h3>
+                <p>Helped identify the deeper meaning behind Urim and Thummim and the concept of the "Soul of the World."</p>
+            </a>
+
+            <a href="https://www.britannica.com/topic/The-Alchemist-novel-by-Coelho" target="_blank" class="ref-card">
+                <span class="ref-tag">Encyclopedia</span>
+                <h3>Britannica: The Alchemist</h3>
+                <p>Used to verify the book's status as one of the best-selling books in history, translated into over 80 languages.</p>
+            </a>
+
+        </div>
+
+        <section style="margin-top: 40px; text-align: center; color: #95a5a6;">
+            <p><em>"There is only one way to learn... It's through action."</em></p>
+        </section>
+    </div>
+</body>
+</html>
